@@ -53,6 +53,13 @@ function raceStep() {
     }
 }
 
+function applyRandomObstacle() {
+    if (Math.random() < 0.1) {
+        tortoisePosition -= 1;
+        harePosition -= 1;
+    }
+}
+
 function moveTortoise() {
     // random integer 1 - 10
     let roll = Math.floor(Math.random() * 10) + 1;

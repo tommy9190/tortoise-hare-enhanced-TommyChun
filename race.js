@@ -58,6 +58,10 @@ function applyRandomObstacle() {
     if (Math.random() < 0.1) {
         tortoisePosition -= 1;
         harePosition -= 1;
+        messageEl.textContent =
+            "Oh no! A random obstacle has slowed both racers down!";
+    } else {
+        messageEl.textContent = "BANG! THEY ARE OFF!!!";
     }
 }
 

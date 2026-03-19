@@ -41,6 +41,7 @@ function startRace() {
 function raceStep() {
     moveTortoise(); // move the tortoise randomly every second
     moveHare(); // move the hare randomly every second
+    applyRandomObstacle(); // apply random obstacle with 10% chance
     clampPosition(); // fix the position if they go beyond the race track
     renderTrack(); // render the track again with the new positions
 
